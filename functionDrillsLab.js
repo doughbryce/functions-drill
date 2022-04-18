@@ -356,6 +356,10 @@ console.log(emailCheck(`12335gmail`));
 */
 
 //CODE HERE
+const maximizeTheFrogs = (gold) => `you can buy ${gold / 3} chocolate frogs`;
+
+let totalFrogs = maximizeTheFrogs(235);
+// console.log(totalFrogs);
 
 
 ////////////////// PROBLEM 20 ////////////////////
@@ -364,7 +368,14 @@ console.log(emailCheck(`12335gmail`));
 */
 
 //CODE HERE
+function maximizeTheFrogs2(gold) {
+  gold = gold - (gold % 3);
+  return `you can buy ${gold / 3} chocolate frogs`;
+}
 
+let totalFrogs2 = maximizeTheFrogs2(23948829834792873942983794872983749872327390847509823749058723984577);
+
+// console.log(totalFrogs2);
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
