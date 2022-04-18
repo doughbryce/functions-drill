@@ -278,6 +278,7 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr',  which will be an array of numbers. 
   Inside of the bigOrSmall function, create a new array called 'answers'. 
+
   Then, loop over the passed in arr parameter, and check to see if the number in the array is GREATER than 100. 
   If it is, push 'big' as a string to the answers array. 
   If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. 
@@ -285,18 +286,35 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push(`big`);
+    } else {
+      answers.push(`small`);
+    }
+  }
+  return answers;
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+
+// console.log(arrayEvaluator);
 
 
 ////////////////// PROBLEM 16 ////////////////////
-let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
-let loser = 'Glimmer'
+let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel'];
+let loser = 'Rue';
 /*
   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
 //CODE HERE
+const theEliminator = (con, los) => con.join(` `).split(los).join(` `).split(` `).filter(name => name !== '');
 
+// console.log(theEliminator(contestants, loser));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
