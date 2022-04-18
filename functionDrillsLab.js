@@ -27,7 +27,10 @@ helloWorld();
 */
 
 //CODE HERE
+const jsNinja = () => `I am a javascript ninja!`;
 
+// let javaninja = jsNinja();
+// console.log(javaninja);
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -37,7 +40,11 @@ helloWorld();
 */
 
 //CODE HERE
+function printName(name) {
+  console.log(name);
+}
 
+printName(`george`);
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -51,7 +58,12 @@ helloWorld();
 */
 
 //CODE HERE
+function greeting(name) {
+  name = String(name);
+  console.log(`hello ${name}`);
+}
 
+greeting(`john`);
 
 ////////////////// PROBLEM 5 ////////////////////
 
