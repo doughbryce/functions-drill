@@ -89,7 +89,7 @@ greeting(`john`);
 
 const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2;
 
-console.log(compareNums(345, 345));
+// console.log(compareNums(345, 345));
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -104,7 +104,7 @@ console.log(compareNums(345, 345));
 const add = (num1, num2) => parseInt(num1) + parseInt(num2);
 
 let sum = add(123, `678`);
-console.log(sum);
+// console.log(sum);
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -120,7 +120,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-let expressionIsTheRightSyntax = true;
+let expressionIsTheSyntaxUsed = true;
 
 
 
@@ -135,7 +135,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-let arrowIsTheRightSyntax = true;
+let arrowIsTheSyntaxUsed = true;
 // declaration
 // expression
 
@@ -164,7 +164,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+let declarationIsTheUsedSyntax = true;
 // expression
 
 
@@ -178,6 +178,18 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+const nameCheck = (name) => {
+  if (name.toLowerCase() === `steven`) {
+    return `What is up ${name}?`
+  } else if(name.toLowerCase() === `bryan`){
+    return `Hey ${name}!`
+  } else {
+    return `cool name, ${name}`
+  }
+}
+
+let nameGreeting = nameCheck(`STeVen`);
+// console.log(nameGreeting);
 
 
 ////////////////// PROBLEM 11 ////////////////////
