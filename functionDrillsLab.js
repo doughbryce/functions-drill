@@ -324,6 +324,11 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function upUpAndAway(str) {
+  console.log(String(str).toUpperCase());
+}
+
+upUpAndAway(sampleString);
 
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -336,6 +341,13 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+function emailCheck(email) {
+  email = String(email).trim();
+  return (email.includes(`@`)) ? `email verified` : `must provide a valid email address`;
+}
+
+console.log(emailCheck(`12335gmail`));
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
