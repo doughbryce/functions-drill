@@ -77,6 +77,19 @@ greeting(`john`);
 */
 
 //CODE HERE
+// function compareNums(num1, num2) {
+//   if (num1 >= num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+// }
+
+// console.log(compareNums(1234, 1234));
+
+const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2;
+
+console.log(compareNums(345, 345));
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -88,6 +101,10 @@ greeting(`john`);
 */
 
 //CODE HERE
+const add = (num1, num2) => parseInt(num1) + parseInt(num2);
+
+let sum = add(123, `678`);
+console.log(sum);
 
 
 ////////////////// PROBLEM 7 ////////////////////
