@@ -120,7 +120,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+let expressionIsTheRightSyntax = true;
 
 
 
@@ -135,7 +135,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+let arrowIsTheRightSyntax = true;
 // declaration
 // expression
 
@@ -145,6 +145,10 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+
+const exclaimThree = str => `${String(str).toUpperCase()}!!!`;
+
+// console.log(exclaimThree(`what is good in the hood`));
 
 
 
