@@ -378,12 +378,38 @@ let totalFrogs2 = maximizeTheFrogs2(23948829834792873942983794872983749872327390
 // console.log(totalFrogs2);
 
 ////////////////// PROBLEM 21 ////////////////////
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+let sampleArray = [0,1,2,3,4,5,6,7,8,9,10,1]
 /*
-  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
+  Write a function that takes in an array of numbers as an argument. 
+  In the body of the function, write logic to determine if the array is in ascending order. 
+  The function should return true, if it is sorted in ascending order, false if it is not. 
+  Create a variable, `arrayIsAscending` and set it equal to your function invoked. 
+  Use the sample array to test this function.
 */
 
 //CODE HERE
+function ascending(arr) {
+  let isAscending = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] <= arr[j]) {
+        isAscending.push(1);
+      } else {
+        isAscending.push(2);
+      }
+    }
+  }
+
+  if (isAscending.includes(2)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+let arrayIsAscending = ascending(sampleArray);
+// console.log(arrayIsAscending);
 
 
 ////////////////// PROBLEM 22 ////////////////////
@@ -408,13 +434,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = [`duck`];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = [`rubberDuck`, `duck`];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = [`sailorDuck`, `rubberDuck`, `duck`];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = [`realDuck`, `duck`];
