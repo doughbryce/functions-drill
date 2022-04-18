@@ -203,7 +203,24 @@ let nameGreeting = nameCheck(`STeVen`);
 */
 
 //CODE HERE
+function faveColorFinder(color) {
+  switch (color.toLowerCase()) {
+    case `red`:
+      return `red is a great color`;
+      break;
+    case `green`:
+      return `green is a solid favorite color`;
+      break;
+    case `black`:
+      return `so trendy`
+      break;
+    default:
+      return `you need to evaluate your favorite color choice`;
+      break;
+  }
+}
 
+// console.log(faveColorFinder(`reD`));
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -214,6 +231,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function printAllNames(array) {
+  
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+
+}
+
+printAllNames(namesArr);
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -225,6 +251,10 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const thatsOdd = (num) => (num % 2 === 0) ? `thats not odd!` : `that is very odd indeed`;
+
+let oddChecker = thatsOdd(235);
+// console.log(oddChecker);
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -238,6 +268,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const bestMovie = (mov) => `${mov} is the best movie ever!!`;
+
+// console.log(bestMovie('shrek'));
 
 
 ////////////////// PROBLEM 15 ////////////////////
